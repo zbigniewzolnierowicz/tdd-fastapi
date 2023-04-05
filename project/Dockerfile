@@ -1,5 +1,5 @@
 # pull official base image
-FROM python:3.11.2-slim-buster
+FROM python:3.10.10-slim-buster
 
 # set working directory
 WORKDIR /usr/src/app
@@ -19,5 +19,5 @@ RUN pip install poetry
 
 COPY . /usr/src/app
 
-RUN poetry config virtualenvs.create false
+RUN poetry config virtualenvs.in-project false
 RUN poetry install
