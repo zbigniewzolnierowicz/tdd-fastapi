@@ -6,4 +6,3 @@ class SummaryPayloadSchema(BaseModel):
 
 class SummaryResponseSchema(BaseModel):
     id: int
-    summary: str
