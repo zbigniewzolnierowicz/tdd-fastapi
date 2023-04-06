@@ -1,5 +1,5 @@
 from app.models.pydantic import SummaryPayloadSchema
-from app.models.tortoise import SummarySchema, TextSummary
+from app.models.tortoise import TextSummary
 from typing import List
 
 async def post(new_summary: SummaryPayloadSchema) -> TextSummary:

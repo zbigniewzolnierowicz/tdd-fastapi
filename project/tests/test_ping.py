@@ -1,5 +1,5 @@
-from app import main
 from starlette.testclient import TestClient
+
 
 def test_ping(test_app: TestClient):
     res = test_app.get("/ping")
