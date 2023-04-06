@@ -29,7 +29,7 @@ RUN pip install --upgrade pip
 RUN pip install poetry
 COPY poetry.toml pyproject.toml poetry.lock $APP_HOME
 
-RUN poetry install --without=dev
+RUN poetry install
 
 # add app
 COPY . .
